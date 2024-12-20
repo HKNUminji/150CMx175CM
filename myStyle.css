@@ -83,6 +83,20 @@ body{
       }
 }
 
+.eight {
+      background-image: url("img/Main8.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+}
+
+@media screen and (max-width: 550px) {
+      .eight {
+        background-image: url("img/Main88.png"); /* 412px 이하에서 사용할 이미지 */
+      }
+}
+
 .scrollAnim .content{
         margin: auto;
 }
