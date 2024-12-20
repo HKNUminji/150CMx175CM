@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+
+*:active, *:focus{
+	outline: none;
+}
+
+body{
+      scroll-snap-type: y mandatory;
+      overflow: hidden;
+      height: 100%;
+      margin: 0 auto;
+      background: #000000;
+}
+
+.header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+}
+  
+.main {
+      background-color: #f4f4f4;
+}
+    
+.footer {
+      background-color: #ddd;
+      text-align: center;
+}
+
+.container{
+      width: 1140px;
+      height: 100%;
+      margin: 0px auto;
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      z-index: 10;
+}
+
+.pannel{
+      width: 100%;
+      height: 100vh;
+      scroll-snap-align: end;
+}
+
+.scrollAnim {
+      min-height: 100vh; 
+      opacity: 0;
+      transition: 0.8s;
+      display: flex;
+      padding: 0 20px;
+}
+  
+.first{
+      background-image: url("img/Background1.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh; 
+
+
+}
+
+@media screen and (max-width: 550px) {
+      .first {
+        background-image: url("img/Backgroundmobile.png"); /* 412px 이하에서 사용할 이미지 */
+      }
+}
+    
+
+.second, .third, .fourth, .fifth, .sixth, .seventh {
+      background-image: url("img/Background2.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+}
+
+@media screen and (max-width: 550px) {
+      .second, .third, .fourth, .fifth, .sixth, .seventh {
+        background-image: url("img/Backgroundmobile.png"); /* 412px 이하에서 사용할 이미지 */
+      }
+}
+
+.scrollAnim .content{
+        margin: auto;
+}
+  
+.scrollAnim.anim{
+        opacity: 1;
+}
+  
+h1{
+      display: block;
+      color: #eee;
+      font-size: 4vh;
+      font-weight: bold;
+      margin: 0;
+      line-height: bold;
+      transition: all 0.8s;
+      text-align: center;
+      margin-bottom: 60%;
+}
+
+@media (max-width: 550px) {
+      h1 {
+          font-size: 3.5vh; /* 폰트 크기 확대 */
+
+      }
+}
+  
+ 
+h2 {
+      display: block;
+      font-size: 5vh;  /* 폰트 크기 설정 */
+      font-weight: bold;
+      margin: 0; /* margin-top 수정 */
+      line-height: 1.2; /* 줄 높이 수정 */
+      text-align: center; /* 텍스트 가운데 정렬 */
+      transition: all 0.8s;
+      margin-top: -88%; /* 비율로 조정 */
+}
+
+@media (max-width: 550px) {
+      h2 {
+
+          font-size: 4vh; /* 폰트 크기 확대 */
+
+      }
+}
+
+  h3 {
+      display: block;
+      font-size: 5vh;  /* 폰트 크기 설정 */
+      font-weight: bold;
+      margin: 0; /* margin-top 수정 */
+      line-height: 1.2; /* 줄 높이 수정 */
+      text-align: center; /* 텍스트 가운데 정렬 */
+      transition: all 0.8s;
+      margin-top: -107%; /* 비율로 조정 */
+  }
+
+  @media (max-width: 550px) {
+      h3 {
+          font-size: 4vh; /* 폰트 크기 확대 */
+
+      }
+}
+
+  h4 {
+      display: block;
+      font-size: 5vh;  /* 폰트 크기 설정 */
+      font-weight: bold;
+      margin: 0; /* margin-top 수정 */
+      line-height: 1.2; /* 줄 높이 수정 */
+      text-align: center; /* 텍스트 가운데 정렬 */
+      transition: all 0.8s;
+      margin-top: -144%; /* 비율로 조정 */
+  }
+
+  @media (max-width: 550px) {
+      h4 {
+          font-size: 4vh; /* 폰트 크기 확대 */
+
+      }
+}
+
+  h5 {
+      display: block;
+      font-size: 5vh;  /* 폰트 크기 설정 */
+      font-weight: bold;
+      margin: 0; /* margin-top 수정 */
+      line-height: 1.2; /* 줄 높이 수정 */
+      text-align: center; /* 텍스트 가운데 정렬 */
+      transition: all 0.8s;
+      margin-top: -124%; /* 비율로 조정 */
+  }
+
+  @media (max-width: 550px) {
+      h5 {
+          font-size: 4vh; /* 폰트 크기 확대 */
+
+      }
+}
+
+  h6 {
+      display: block;
+      font-size: 5vh;  /* 폰트 크기 설정 */
+      font-weight: bold;
+      margin: 0; /* margin-top 수정 */
+      line-height: 1.2; /* 줄 높이 수정 */
+      text-align: center; /* 텍스트 가운데 정렬 */
+      transition: all 0.8s;
+      margin-top: -110%; /* 비율로 조정 */
+  }
+  @media (max-width: 550px) {
+      h6 {
+          font-size: 4vh; /* 폰트 크기 확대 */
+          margin-top: -110%; /* 비율로 조정 */
+      }
+}
+
+h7 {
+      display: block;
+      font-size: 5vh;  /* 폰트 크기 설정 */
+      font-weight: bold;
+      margin: 0; /* margin-top 수정 */
+      line-height: 1.2; /* 줄 높이 수정 */
+      text-align: center; /* 텍스트 가운데 정렬 */
+      transition: all 0.8s;
+      margin-top: -102%; /* 비율로 조정 */
+}
+
+@media (max-width: 550px) {
+      h7 {
+          font-size: 4vh; /* 폰트 크기 확대 */
+          margin-top: -115%; /* 비율로 조정 */
+
+      }
+}
+  
+.anim h1, .anim h2{
+      transition-delay: 0.1s;
+}
+
+p1{
+      font-size: 2.5vh;
+      transition: all 1.2s;
+      text-align: center;
+}
+
+p2 {
+      display: block;
+      font-size: 2vh;
+      font-weight: 600;
+      transition: all 1.2s;
+      text-align: center;  /* 텍스트 가운데 정렬 */
+      margin-top: 10px;    /* 여백 조정 */
+  }
+
+  @media (max-width: 550px) {
+      p1 {
+          font-size: 2vh; /* 폰트 크기 확대 */
+
+      }
+  }
+
+  @media (max-width: 550px) {
+      p2 {
+          font-size: 2vh; /* 폰트 크기 확대 */
+
+      }
+}
+
+
+.anim-top{
+        transform: translate(0,150px);
+}
+.anim-left{
+        transform: translate(-150px,0);
+}
+.anim .anim-top{
+        transform: translate(0,0);
+}
+.anim .anim-left{
+        transform: translate(0,0);	
+}
+  
+.steps{
+        width: 100%;
+        margin: auto;
+}
+
+.content {
+      position: relative
+}
+
+  
+/* 상단 검정 직사각형 */
+.top-rectangle {
+      position: fixed; /* 스크롤에 영향을 받지 않고 고정 */
+      top: 0; /* 화면의 맨 위에 위치 */
+      left: 0; /* 화면의 왼쪽 가장자리에 위치 */
+      width: 100vw; /* 화면 전체 너비 */
+      height: 40px; /* 원하는 높이 */
+      background-color: black; /* 검정색 배경 */
+      z-index: 1000; /* 다른 요소 위에 나타나도록 높은 z-index 설정 */
+  }
+  
+  /* 하단 검정 직사각형 */
+  .bottom-rectangle {
+      position: fixed; /* 스크롤에 영향을 받지 않고 고정 */
+      bottom: 0; /* 화면의 맨 아래에 위치 */
+      left: 0; /* 화면의 왼쪽 가장자리에 위치 */
+      width: 100vw; /* 화면 전체 너비 */
+      height: 50px; /* 원하는 높이 */
+      background-color: black; /* 검정색 배경 */
+      z-index: 1000; /* 다른 요소 위에 나타나도록 높은 z-index 설정 */
+  }
+  
+  
+.scroller{
+        position: fixed;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+  
+}
+
+#imageScroller {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: fixed;
+  }
+  
+  .image-item img {
+      width: 110vh;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+      transition: all 0.5s ease;
+  }
+  
+  .image-item {
+      position: absolute;
+      opacity: 0;
+      transition: opacity 0.4s ease-in-out;
+      pointer-events: none;
+  }
+  
+  .image-item.visible {
+      opacity: 1;
+      pointer-events: auto;
+      z-index: 10;
+      transition-delay: 0.5s;
+}
+
+img {
+      max-width: 100%; /* 추가 @ */
+      object-fit: contain; /* 이미지가 왜곡되지 않도록 유지 */
+      display: block; /* 이미지 블록 정렬 */
+      margin: 0 auto;
+}
+    
+.image-button {
+      position: absolute;
+      width: 200px;
+      left: 50%;
+      top: 190%;  /* 버튼이 화면 아래쪽에 위치하도록 설정 */
+      transform: translateX(-50%);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      margin-top: 55%;
+}
+
+.image-button1 {
+      position: absolute;
+      width: 200px;
+      left: 50%;
+      top: 190%;  /* 버튼이 화면 아래쪽에 위치하도록 설정 */
+      transform: translateX(-50%);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      margin-top: 65%;
+}
+
+.image-button2 {
+      position: absolute;
+      width: 200px;
+      left: 50%;
+      top: 190%;  /* 버튼이 화면 아래쪽에 위치하도록 설정 */
+      transform: translateX(-50%);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      margin-top: 92%;
+}
+
+.image-button3 {
+      position: absolute;
+      width: 200px;
+      left: 50%;
+      top: 190%;  /* 버튼이 화면 아래쪽에 위치하도록 설정 */
+      transform: translateX(-50%);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      margin-top: 80%;
+}
+
+.image-button4 {
+      position: absolute;
+      width: 200px;
+      left: 50%;
+      top: 190%;  /* 버튼이 화면 아래쪽에 위치하도록 설정 */
+      transform: translateX(-50%);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      margin-top: 62%;
+}
+
+
+
+
+
+@media (max-width: 550px) {
+      .image-button,.image-button1, .image-button2, .image-button3, .image-button4 {
+          display: none;
+      }
+}
+  
+@keyframes fadeIn {
+      from{ 
+            opacity:  0; 
+      }
+      to{
+            opacity: 1;
+      }
+}
+@keyframes fadeInOut {
+      0%{ 
+            opacity:  0; 
+      }
+      50%{
+            opacity: 1;
+      }
+      100%{
+            opacity: 0;
+      }
+}
+  
+  
+/* 반응형 디자인 적용 */
+
+
+
+  
+@keyframes fadeIn {
+      from{ 
+            opacity:  0; 
+      }
+      to{
+            opacity: 1;
+      }
+}
+@keyframes fadeInOut {
+      0%{ 
+            opacity:  0; 
+      }
+      50%{
+            opacity: 1;
+      }
+      100%{
+            opacity: 0;
+      }
+}
