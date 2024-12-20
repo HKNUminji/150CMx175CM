@@ -212,29 +212,7 @@ updateImageSource();
 window.addEventListener('resize', updateImageSource);
 
 
-const onScrollEnd = (e) => {
-  endX = getClientX(e);
-  listX = getTranslateX();
-  if (listX > 0) {
-    setTranslateX(0);
-    list.style.transition = `all 0.3s ease`;
-    listX = 0;
-  } else if (listX < listClientWidth - listScrollWidth) {
-    setTranslateX(listClientWidth - listScrollWidth);
-    list.style.transition = `all 0.3s ease`;
-    listX = listClientWidth - listScrollWidth;
-  }
+window.addEventListener('touchmove', handleScrollEvent)
 
-  window.removeEventListener('mousedown', onScrollStart);
-  window.removeEventListener('touchstart', onScrollStart);
-  window.removeEventListener('mousemove', onScrollMove);
-  window.removeEventListener('touchmove', onScrollMove);
-  window.removeEventListener('mouseup', onScrollEnd);
-  window.removeEventListener('touchend', onScrollEnd);
-  window.removeEventListener('click', onClick);
 
-  setTimeout(() => {
-    bindEvents();
-    list.style.transition = '';
-  }, 300);
-};
+
