@@ -124,7 +124,7 @@ h2 {
 
 @media (max-width: 550px) {
       h2 {
-	      color: #eee;
+
           font-size: 4vh; /* 폰트 크기 확대 */
 
       }
@@ -144,7 +144,7 @@ h2 {
   @media (max-width: 550px) {
       h3 {
           font-size: 4vh; /* 폰트 크기 확대 */
-      	color: #eee;
+
       }
 }
 
@@ -162,7 +162,7 @@ h2 {
   @media (max-width: 550px) {
       h4 {
           font-size: 4vh; /* 폰트 크기 확대 */
-	      color: #eee;
+
       }
 }
 
@@ -180,7 +180,7 @@ h2 {
   @media (max-width: 550px) {
       h5 {
           font-size: 4vh; /* 폰트 크기 확대 */
-	      color: #eee;
+
       }
 }
 
@@ -198,7 +198,7 @@ h2 {
       h6 {
           font-size: 4vh; /* 폰트 크기 확대 */
           margin-top: -110%; /* 비율로 조정 */
-	            color: #eee;
+
       }
 }
 
@@ -217,7 +217,7 @@ h7 {
       h7 {
           font-size: 4vh; /* 폰트 크기 확대 */
           margin-top: -115%; /* 비율로 조정 */
-	      color: #eee;
+
       }
 }
   
@@ -250,7 +250,7 @@ p2 {
   @media (max-width: 550px) {
       p2 {
           font-size: 2vh; /* 폰트 크기 확대 */
-	      color: #eee;
+
       }
 }
 
